@@ -1,0 +1,44 @@
+Information
+
+1.Space in Skills Replace with correct one
+2.One or two character missing in spelling is incorrect replace with correct one
+3.Unused skills Data for rectification
+4.Used incorrect skills Data 
+5.Remaining Skill set of Data
+
+
+inactive mistakes: 12065 (status 0)
+active mistakes: 10682 (status 1)
+
+
+whitespace removal
+spelling mistakes - requires dictionary
+useful skills with status 0
+garbage values with status 1
+
+
+
+Data exploration:
+	Get frequency count for each word in terms of how many userprofiles it is connected to.
+	Can be used as an auxillary dictionary?
+
+
+for each skill:
+	remove useless whitespace
+	remove anything except alphabets. if there are symbols or numbers in the middle of 2 characters, it's garbage
+	remove articles, conjunctions, prepositions, adjectives
+
+	// TODO: if skill has too many words, maybe we can filter it out?
+
+	for every word in the skill:
+		check if it exists in the dict = spellchecker + auxillary.
+		if all words exist in dict, skill is validated
+
+		otherwise
+		replace words with result from dict (1 edit distance for less than 4 letter words, otherwise edit distance of 2)
+		if no such options, mark it as garbage
+		if skill doesn't have a single noun in it, it's garbage
+
+	store every skill with a replacement. if even 1 word is garbage, whole skill is marked 'garbage'
+
+	//TODO: Handle cases where spellings are there in spellchecker but it's not a valid skill?

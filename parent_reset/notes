@@ -1,0 +1,18 @@
+notes
+
+reset parents of skills
+set functional roles of parents
+
+
+
+algo:
+
+	check if all functional areas mentioned in csv exist in the database
+
+	iterate over csv.
+		on each row, find parent and parent id
+		find functional area and functional area id
+		keep 2 dictionaries, and for each skill, set the parent id and the functional area id
+
+		iterate over dictionary
+			for each skill, set functional area and parent id

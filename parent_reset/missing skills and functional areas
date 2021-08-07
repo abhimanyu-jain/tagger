@@ -1,0 +1,31 @@
+Missing Skills
+
+	Process
+	Painter/polisher
+	Draughtman/autocad
+	Maintenance Engineering
+	Worker/helper/majdoor
+	Quality Acessor/controller
+	ITI Engineer
+	Dying operator
+	Aviation Airport
+	CEO
+	Content Writer
+	Doctor
+	Content Writer
+	Test Engineer
+	Trainer
+	Water Purifier
+	Helper/labour
+	Quality Acessor/controller
+
+Missing Functional areas
+
+	Operator / Machinist / Moulder
+	Telecaller/ Customer Service
+	Gym Trainers/ Yoga
+
+
+
+
+	db.skills.find({'name' : ""})
